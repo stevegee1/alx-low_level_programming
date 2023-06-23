@@ -1,8 +1,8 @@
 #include <stdio.h>
-int main(void)
+#define int main(void)
 {
-const char* message="\"Programming is like building a multilingual puzzle";
-	puts(message);
+	const char* msg="\"Programming is like building a multilingual puzzle";
+	puts(msg);
 	return(0);
 }
 
