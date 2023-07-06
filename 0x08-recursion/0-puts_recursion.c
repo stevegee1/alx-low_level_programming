@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 /**
  * _puts_recursion - function that prints a string, followed by a new line
  * @s: pointer to char
@@ -8,7 +9,8 @@ void _puts_recursion(char *s)
 {
 char *ptr = s;
 	if (*ptr == '\0')
-{return;
+{putchar('\n');
+return;
 }
 write(1, ptr, 1);
 _puts_recursion(ptr+1);
