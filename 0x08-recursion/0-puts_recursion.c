@@ -10,6 +10,6 @@ char *ptr = s;
 	if (*ptr == '\0')
 {return;
 }
-write(1,ptr++,1);
+write(1, ptr++, 1);
 _puts_recursion(ptr);
 }
