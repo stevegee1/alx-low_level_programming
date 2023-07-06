@@ -13,5 +13,5 @@ char *ptr = s;
 return;
 }
 write(1, ptr, 1);
-_puts_recursion(ptr+1);
+_puts_recursion(ptr + 1);
 }
