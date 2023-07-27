@@ -15,7 +15,7 @@ int print_last_digit(int c)
 	c = -1 * c;
 	}
 	x = c % 10;
-	printf("%d", x);
+	_putchar (x + '0');
 	return (x);
 }
 
