@@ -35,7 +35,6 @@ int x, y;
 				_putchar('0' + y / 10);
 				_putchar('0' + y % 10);
 			}
-			_putchar(32);
 			_putchar(10);
 }
 }
