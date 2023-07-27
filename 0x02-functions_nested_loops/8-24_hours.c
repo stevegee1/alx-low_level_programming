@@ -20,6 +20,7 @@ void jack_bauer(void)
 				{
 					printf("%d%d:%d%d", (x), (y), (w), (z));
 					_putchar (32);
+					_putchar (10);
 				}
 			}
 		}
