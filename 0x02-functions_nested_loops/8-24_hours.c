@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdio.h>
+
 
 /**
  * jack_bauer - prints every minute of the day
@@ -8,22 +7,36 @@
  */
 void jack_bauer(void)
 {
-	int x, y, w, z;
+int x, y;
 
-	for (x = 0; x <= 2; x++)
+
+	for (x = 0; x < 24; x++)
 	{
-		for (y = 0; y <= 3; y++)
+		for (y = 0; y < 60; y++)
 		{
-			for (w = 0; w <= 5; w++)
+			if (x < 10)
 			{
-				for (z = 0; z <= 9; z++)
-				{
-					printf("%d%d:%d%d", (x), (y), (w), (z));
-					_putchar (32);
-					_putchar (10);
-				}
+			_putchar('0');
+			_putchar('0' + x);
 			}
-		}
-	}
+			else
+			{
+				_putchar('0' + x / 10);
+				_putchar('0' + x % 10);
+			}
+			_putchar(':');
+			if (y < 10)
+			{
+				_putchar('0');
+				_putchar('0' + y);
+			}
+			else
+			{
+				_putchar('0' + y / 10);
+				_putchar('0' + y % 10);
+			}
+			_putchar(32);
+			_putchar(10);
 }
-
+}
+}
