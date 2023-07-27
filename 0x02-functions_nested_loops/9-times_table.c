@@ -20,8 +20,12 @@ int x, y, z;
 			{
 				_putchar('0' + z / 10);
 				_putchar('0' + z % 10);
+				if (y < 9)
+				{
+					_putchar(',');
+				}
 			}
-			if (y != 9)
+			if (y != 9 && z < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
