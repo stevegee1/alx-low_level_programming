@@ -17,7 +17,7 @@ int _print_Number_helper(int n, int x)
 	return (_print_Number_helper(n, x + 1));
 }
 /**
- * _is_prime_number - returns 1 if prime number
+ * is_prime_number - returns 1 if prime number
  * @n: integer
  * Return: integer
  */
